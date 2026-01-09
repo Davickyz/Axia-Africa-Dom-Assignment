@@ -21,6 +21,13 @@ function getInput() {
   });
 }
 
+inputText.addEventListener('keydown', (event) => {
+  // console.log(event.target.value);
+  if(event.key === 'Enter'){
+    getInput();
+  };
+});
+
 addButton.addEventListener('click', getInput);  
 
 function removeItem(button) {
